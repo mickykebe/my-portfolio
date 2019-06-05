@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Langbot",
+    "url": "https://langbot.io",
+    "image": "./images/langbot.png",
+    "duration": "October 2018 - Current",
+    "description": "I'm currently a senior full stack engineer building Langbot's EdTech Platform. Langbot is a platform where educators can create immersive courses to be administrated over facebook messenger to a page's following.",
+    "tags": ["Javascript", "React", "Node.js", "Preact"]
+  },
+  {
+    "title": "Zena",
+    "url": "https://play.google.com/store/apps/details?id=com.fentale.zena",
+    "image": "./images/zena.png",
+    "duration": "July 2018 - Current",
+    "description": "Zena is a cross platform Ethiopian news aggregator app.",
+    "tags": ["Dart", "Flutter"]
+  },
+  {
+    "title": "Tenegna",
+    "url": "https://play.google.com/store/apps/details?id=com.mickykebe.tenegna",
+    "image": "./images/zena.png",
+    "duration": "February 2018 - June 2018",
+    "description": "Tenegna is a cross platform mobile app for publishing amharic news articles",
+    "tags": ["Dart", "Flutter"]
+  },
+  {
+    "title": "AhadooCollect",
+    "url": "http://c.ahadootec.com/",
+    "image": "./images/ahadoocollect.jpg",
+    "duration": "July 2017 - January 2018",
+    "description": "Built the frontend for AhadooCollect(a survey creation and data collection platform similar to KoBoToolbox)",
+    "tags": ["Javascript", "React", "Redux"]
+  },
+  {
+    "title": "Dallol",
+    "url": "https://play.google.com/store/apps/details?id=com.fentale.dalol",
+    "image": "./images/dallol.jpg",
+    "duration": "January 2016 - December 2016",
+    "description": "Dallol is an Ethiopian news and video aggregator app built for android",
+    "tags": ["Java", "Android"]
+  }
+]

@@ -7,6 +7,7 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -19,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `./src/images`,
+        path: `./data`,
       },
     },
   ],

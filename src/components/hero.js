@@ -45,7 +45,11 @@ export default function Hero({ imageData }) {
         </p>
         <p>
           I currently work as a senior full stack engineer at{" "}
-          <a href="https://www.langbot.io" target="_blank">
+          <a
+            href="https://www.langbot.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Langbot
           </a>{" "}
           building the platform's bot and content management system.
@@ -55,6 +59,7 @@ export default function Hero({ imageData }) {
           <a
             href="https://play.google.com/store/apps/details?id=com.fentale.zena"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Zena app
           </a>

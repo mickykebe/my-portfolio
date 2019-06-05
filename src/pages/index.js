@@ -8,10 +8,28 @@ const Main = styled.main``
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "me.jpg" }) {
+    file(relativePath: { eq: "images/me.jpg" }) {
       childImageSharp {
         fixed(width: 120, height: 120) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    allProjectsJson {
+      edges {
+        node {
+          title
+          url
+          duration
+          description
+          tags
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
