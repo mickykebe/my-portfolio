@@ -2,6 +2,7 @@ import React from "react"
 
 import Img from "gatsby-image"
 import styled from "styled-components"
+import Link from "./link"
 
 const Root = styled.section`
   width: 800px;
@@ -19,12 +20,19 @@ const LogoImage = styled(Img)`
 `
 
 const HeroHeaderText = styled.h2`
+  font-size: 2.4rem;
   flex: 1;
   margin: 0 0 0 16px;
 `
 
 const HeroDescription = styled.div`
   margin-left: 136px;
+  font-size: 2rem;
+  line-height: 1.5;
+`
+
+const Paragraph = styled.p`
+  margin-bottom: 1.6rem;
 `
 
 export default function Hero({ imageData }) {
@@ -38,33 +46,33 @@ export default function Hero({ imageData }) {
         </HeroHeaderText>
       </HeroHeader>
       <HeroDescription>
-        <p>
+        <Paragraph>
           I've been designing web and mobile apps for over 5 years. I'm a full
           stack engineer and mobile app engineer working with Javascript, React,
           Node and Flutter.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           I currently work as a senior full stack engineer at{" "}
-          <a
-            href="https://www.langbot.io"
+          <Link
+            to="https://www.langbot.io"
             target="_blank"
             rel="noopener noreferrer"
           >
             Langbot
-          </a>{" "}
+          </Link>{" "}
           building the platform's bot and content management system.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           In my spare time I work on{" "}
-          <a
-            href="https://play.google.com/store/apps/details?id=com.fentale.zena"
+          <Link
+            to="https://play.google.com/store/apps/details?id=com.fentale.zena"
             target="_blank"
             rel="noopener noreferrer"
           >
             Zena app
-          </a>
+          </Link>
           , which is an Ethiopian news aggregator app I built.
-        </p>
+        </Paragraph>
       </HeroDescription>
     </Root>
   )

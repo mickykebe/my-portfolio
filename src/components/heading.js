@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Header = styled.header`
@@ -16,12 +17,18 @@ const Navigation = styled.nav`
   display: flex;
   padding: 8px 16px;
   align-items: center;
-  height: 64px;
+  height: 48px;
 `
 
-const NameHeader = styled.h2`
+const NameLink = styled(Link)`
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: var(--color-grey-dark);
+`
+
+const Spacer = styled.div`
   flex: 1;
-  margin: 0;
 `
 
 const NavList = styled.ul`
@@ -48,7 +55,8 @@ export default function Heading() {
   return (
     <Header windowScrolled={windowScrolled}>
       <Navigation>
-        <NameHeader>Michael K. Tedla</NameHeader>
+        <NameLink to="/">Michael K. Tedla</NameLink>
+        <Spacer />
         <NavList>
           <NavListItem>LinkedIn</NavListItem>
           <NavListItem>Resume</NavListItem>

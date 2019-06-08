@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700&display=swap");
+
+:root {
+  --primary-color: #00796b;
+  --primary-color-dark: #004d40;
+  --color-grey-dark: #333;
+  --color-grey-dark-2: #777;
+}
+
+html {
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.7;
+}
+
+body {
+  color: #333;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}

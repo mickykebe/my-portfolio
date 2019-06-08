@@ -18,7 +18,7 @@
   {
     "title": "Tenegna",
     "url": "https://play.google.com/store/apps/details?id=com.mickykebe.tenegna",
-    "image": "./images/zena.png",
+    "image": "./images/tenegna.png",
     "duration": "February 2018 - June 2018",
     "description": "Tenegna is a cross platform mobile app for publishing amharic news articles",
     "tags": ["Dart", "Flutter"]
@@ -34,9 +34,17 @@
   {
     "title": "Dallol",
     "url": "https://play.google.com/store/apps/details?id=com.fentale.dalol",
-    "image": "./images/dallol.jpg",
+    "image": "./images/dallol.png",
     "duration": "January 2016 - December 2016",
     "description": "Dallol is an Ethiopian news and video aggregator app built for android",
     "tags": ["Java", "Android"]
+  },
+  {
+    "title": "Salayish Landing Page",
+    "url": "https://salayishlodge.com",
+    "image": "./images/salayish.jpg",
+    "duration": "January 2018",
+    "description": "Designed and built the landing page for Salayish lodge and resort",
+    "tags": ["html", "css", "js", "sass"]
   }
 ]
