@@ -1,7 +1,7 @@
 import React from "react"
 
-import Img from "gatsby-image"
 import styled from "styled-components"
+import Image from "gatsby-image"
 import Link from "./link"
 
 const Root = styled.section`
@@ -13,10 +13,6 @@ const Root = styled.section`
 const HeroHeader = styled.div`
   display: flex;
   align-items: center;
-`
-
-const LogoImage = styled(Img)`
-  border-radius: 50%;
 `
 
 const HeroHeaderText = styled.h2`
@@ -35,11 +31,17 @@ const Paragraph = styled.p`
   margin-bottom: 1.6rem;
 `
 
+const MyPhoto = styled(Image)`
+  width: 12rem;
+  height: 12rem;
+  box-shadow: 0 1px 3px 1px rgba(200, 200, 200, 1);
+`
+
 export default function Hero({ imageData }) {
   return (
     <Root>
       <HeroHeader>
-        <LogoImage fixed={imageData} />
+        <MyPhoto fluid={imageData} />
         <HeroHeaderText>
           Hi, I'm Michael. I'm a mobile and web app engineer in Addis Ababa,
           Ethiopia.

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
+import Foot from "../components/foot"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Project from "../components/project"
@@ -15,8 +16,8 @@ export default () => {
     query {
       file(relativePath: { eq: "images/me.jpg" }) {
         childImageSharp {
-          fixed(width: 120, height: 120) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -41,10 +42,11 @@ export default () => {
     }
   `)
   const projects = data.allProjectsJson.edges
+  const selfImageData = data.file.childImageSharp.fluid
   return (
     <Layout>
       <Main>
-        <Hero imageData={data.file.childImageSharp.fixed} />
+        <Hero imageData={selfImageData} />
         <section>
           {projects.map(({ node: project }) => {
             const { title, description, url, duration, image } = project
@@ -62,6 +64,7 @@ export default () => {
           })}
         </section>
       </Main>
+      <Foot myImageData={selfImageData} />
     </Layout>
   )
 }
