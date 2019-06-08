@@ -43,7 +43,7 @@ const NavListItem = styled.li`
 `
 
 export default function Heading() {
-  const [windowScrolled, setWindowScrolled] = React.useState(window.scrollY > 0)
+  const [windowScrolled, setWindowScrolled] = React.useState(false)
   const handleWindowScroll = () => {
     setWindowScrolled(window.scrollY > 0)
   }

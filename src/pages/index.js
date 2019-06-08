@@ -47,7 +47,6 @@ export default () => {
         <Hero imageData={data.file.childImageSharp.fixed} />
         <section>
           {projects.map(({ node: project }) => {
-            console.log(project)
             const { title, description, url, duration, image } = project
             const imageData = image.childImageSharp.fluid
             return (
