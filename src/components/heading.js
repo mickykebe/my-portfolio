@@ -1,6 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import FileTextIcon from "../../assets/file-text.svg"
+import LinkedInIcon from "../../assets/linkedin.svg"
+
+const navIconStyles = css`
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+`
+
+const StyledFileTextIcon = styled(FileTextIcon)`
+  ${navIconStyles}
+`
+
+const StyledLinkedInIcon = styled(LinkedInIcon)`
+  ${navIconStyles}
+`
 
 const Header = styled.header`
   position: fixed;
@@ -42,6 +58,18 @@ const NavListItem = styled.li`
   margin: 0;
 `
 
+const NavLink = styled.a`
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-grey-dark);
+  text-decoration: none;
+  :hover {
+    color: var(--primary-color);
+  }
+`
+
 export default function Heading() {
   const [windowScrolled, setWindowScrolled] = React.useState(false)
   const handleWindowScroll = () => {
@@ -58,8 +86,24 @@ export default function Heading() {
         <NameLink to="/">Michael K. Tedla</NameLink>
         <Spacer />
         <NavList>
-          <NavListItem>LinkedIn</NavListItem>
-          <NavListItem>Resume</NavListItem>
+          <NavListItem>
+            <NavLink
+              href="https://www.linkedin.com/in/mickykebe/"
+              target="_blank"
+            >
+              <StyledLinkedInIcon />
+              LinkedIn
+            </NavLink>
+          </NavListItem>
+          <NavListItem>
+            <NavLink
+              href="https://drive.google.com/open?id=1gwJIBs2N5LvJSBMmpBqChn3CwC-S--tX"
+              target="_blank"
+            >
+              <StyledFileTextIcon />
+              Resume
+            </NavLink>
+          </NavListItem>
         </NavList>
       </Navigation>
     </Header>

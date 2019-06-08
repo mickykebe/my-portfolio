@@ -57,21 +57,31 @@ const Copyright = styled.span`
 function Foot({ myImageData }) {
   return (
     <Footer>
-      <Header>We can build something together</Header>
+      <Header>Contact me. We can build something together</Header>
       <ContactCards>
         <ContactCard>
           <ContactHeader>Email</ContactHeader>
-          <ContactLink to="mailto:mickykebe@gmail.com">
+          <ContactLink to="mailto:mickykebe@gmail.com" target="_blank">
             mickykebe@gmail.com
           </ContactLink>
         </ContactCard>
         <ContactCard>
           <ContactHeader>Resume</ContactHeader>
-          <ContactLink to="mailto:mickykebe@gmail.com">Download</ContactLink>
+          <ContactLink
+            to="https://drive.google.com/open?id=1gwJIBs2N5LvJSBMmpBqChn3CwC-S--tX"
+            target="_blank"
+          >
+            Download
+          </ContactLink>
         </ContactCard>
         <ContactCard>
           <ContactHeader>Message</ContactHeader>
-          <ContactLink to="mailto:mickykebe@gmail.com">LinkedIn</ContactLink>
+          <ContactLink
+            to="https://www.linkedin.com/in/mickykebe/"
+            target="_blank"
+          >
+            LinkedIn
+          </ContactLink>
         </ContactCard>
       </ContactCards>
       <PhotoContainer>
