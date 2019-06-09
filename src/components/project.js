@@ -10,6 +10,11 @@ const Root = styled.div`
   min-height: 300px;
   margin-bottom: 3.2rem;
   background-color: #f8fafc;
+  @media (max-width: 37.5em) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem;
+  }
 `
 
 const ProjectColumn = styled.div`
@@ -17,10 +22,18 @@ const ProjectColumn = styled.div`
 `
 
 const DescriptionColumn = styled(ProjectColumn)`
-  padding-right: 16px;
+  padding-right: 1.6rem;
+  @media (max-width: 37.5em) {
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
 `
 
-const ImageColumn = styled(ProjectColumn)``
+const ImageColumn = styled(ProjectColumn)`
+  @media (max-width: 37.5em) {
+    width: 100%;
+  }
+`
 
 const H3 = styled.h3`
   font-size: 2rem;

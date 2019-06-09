@@ -5,26 +5,40 @@ import Image from "gatsby-image"
 import Link from "./link"
 
 const Root = styled.section`
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 60px 0px;
+  padding: 6rem 1.6rem;
+
+  @media (max-width: 37.5em) {
+    text-align: justify;
+  }
 `
 
 const HeroHeader = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 37.5em) {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
 `
 
 const HeroHeaderText = styled.h2`
   font-size: 2.4rem;
   flex: 1;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 1.6rem;
+  @media (max-width: 37.5em) {
+    margin: 0;
+  }
 `
 
 const HeroDescription = styled.div`
-  margin-left: 136px;
+  margin-left: 14rem;
   font-size: 2rem;
   line-height: 1.5;
+  @media (max-width: 37.5em) {
+    margin-left: 0;
+  }
 `
 
 const Paragraph = styled.p`
@@ -35,6 +49,9 @@ const MyPhoto = styled(Image)`
   width: 12rem;
   height: 12rem;
   box-shadow: 0 1px 3px 1px rgba(200, 200, 200, 1);
+  @media (max-width: 37.5em) {
+    margin-bottom: 2rem;
+  }
 `
 
 export default function Hero({ imageData }) {

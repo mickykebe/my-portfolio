@@ -11,6 +11,11 @@ const Main = styled.main`
   margin: 0 auto;
 `
 
+const ProjectsSection = styled.section`
+  margin: 0 auto;
+  padding: 0 1.6rem;
+`
+
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -47,7 +52,7 @@ export default () => {
     <Layout>
       <Main>
         <Hero imageData={selfImageData} />
-        <section>
+        <ProjectsSection>
           {projects.map(({ node: project }) => {
             const { title, description, url, duration, image } = project
             const imageData = image.childImageSharp.fluid
@@ -62,7 +67,7 @@ export default () => {
               />
             )
           })}
-        </section>
+        </ProjectsSection>
       </Main>
       <Foot myImageData={selfImageData} />
     </Layout>

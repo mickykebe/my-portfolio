@@ -25,3 +25,9 @@ body {
   padding: 0;
   box-sizing: inherit;
 }
+
+@media only screen and (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}

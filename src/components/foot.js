@@ -19,13 +19,20 @@ const ContactCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  @media (max-width: 37.5em) {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
 `
 
 const ContactCard = styled.div`
   flex: 1;
   text-align: center;
-  padding: 3.2rem 0;
+  @media (max-width: 37.5em) {
+    padding-bottom: 2.5rem;
+  }
 `
 
 const ContactHeader = styled.h3`
