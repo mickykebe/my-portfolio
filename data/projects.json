@@ -20,7 +20,7 @@
     "url": "https://play.google.com/store/apps/details?id=com.mickykebe.tenegna",
     "image": "./images/tenegna.png",
     "duration": "February 2018 - June 2018",
-    "description": "Tenegna is a cross platform mobile app for publishing amharic news articles",
+    "description": "Tenegna is a cross platform mobile app for publishing health related amharic news articles",
     "tags": ["Dart", "Flutter"]
   },
   {
