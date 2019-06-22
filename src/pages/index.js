@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Foot from "../components/foot"
@@ -50,6 +51,11 @@ export default () => {
   const selfImageData = data.file.childImageSharp.fluid
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Michael Tedla - Web app developer</title>
+        <link rel="canonical" href="http://mickykebe.com/" />
+      </Helmet>
       <Main>
         <Hero imageData={selfImageData} />
         <ProjectsSection>
