@@ -71,15 +71,16 @@ export default function Hero({ imageData }) {
           Node and Flutter.
         </Paragraph>
         <Paragraph>
-          I currently work as a senior full stack engineer at{" "}
+          I'm the founder and lead engineer of
           <Link
-            to="https://www.langbot.io"
+            to="https://hulusira.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Langbot
+            HuluSira.
           </Link>{" "}
-          building the platform's bot and content management system.
+          Currently trying to make jobs in Ethiopia more accessible to job
+          seekers.
         </Paragraph>
         <Paragraph>
           In my spare time I work on{" "}
