@@ -1,10 +1,18 @@
 [
   {
+    "title": "HuluSira",
+    "url": "https://hulusira.com",
+    "image": "./images/hulusira.png",
+    "duration": "October 2019 - Current",
+    "description": "I'm currently founder and full stack developer on hulusira.com. HuluSira is a job board platform for job seekers based in Ethiopia.",
+    "tag": ["Javascript", "React", "Node.js", "Next.js", "Express.js"]
+  },
+  {
     "title": "Langbot",
     "url": "https://langbot.io",
     "image": "./images/langbot.png",
-    "duration": "October 2018 - Current",
-    "description": "I'm currently a senior full stack engineer building Langbot's EdTech Platform. Langbot is a platform where educators can create immersive courses to be administrated over facebook messenger to a page's following.",
+    "duration": "October 2018 - October 2019",
+    "description": "Full stack engineer building Langbot's EdTech Platform. Langbot is a platform where educators can create immersive courses to be administrated over facebook messenger to a page's following.",
     "tags": ["Javascript", "React", "Node.js", "Preact"]
   },
   {

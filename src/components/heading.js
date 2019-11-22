@@ -97,7 +97,7 @@ export default function Heading() {
           </NavListItem>
           <NavListItem>
             <NavLink
-              href="https://drive.google.com/open?id=1gwJIBs2N5LvJSBMmpBqChn3CwC-S--tX"
+              href="https://drive.google.com/file/d/1zcBg-nhGLH_zh3ltpEGBx26dDiaxJxYs/view"
               target="_blank"
             >
               <StyledFileTextIcon />
