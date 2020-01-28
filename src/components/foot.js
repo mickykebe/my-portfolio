@@ -75,10 +75,10 @@ function Foot({ myImageData }) {
         <ContactCard>
           <ContactHeader>Resume</ContactHeader>
           <ContactLink
-            to="https://drive.google.com/open?id=1gwJIBs2N5LvJSBMmpBqChn3CwC-S--tX"
+            to="https://docs.google.com/document/d/e/2PACX-1vSXioXA6PnHwQ8IipJ5xiG11p-t_0C5bDwHcg-0g9yRVI8HZ1vbE8o57mTmY2ste4J3MMdQyijBXLa6/pub"
             target="_blank"
           >
-            Download
+            Open
           </ContactLink>
         </ContactCard>
         <ContactCard>
