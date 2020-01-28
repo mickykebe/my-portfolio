@@ -54,7 +54,7 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Michael Tedla - Web app developer</title>
-        <link rel="canonical" href="http://mickykebe.com/" />
+        <link rel="canonical" href="https://mickykebe.com/" />
       </Helmet>
       <Main>
         <Hero imageData={selfImageData} />
