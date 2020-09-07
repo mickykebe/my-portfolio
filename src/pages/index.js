@@ -7,14 +7,15 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Project from "../components/project"
 
-const Main = styled.main`
-  max-width: 960px;
-  margin: 0 auto;
-`
+const Main = styled.main``
 
 const ProjectsSection = styled.section`
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 `
 
 export default () => {

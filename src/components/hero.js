@@ -8,6 +8,8 @@ const Root = styled.section`
   max-width: 800px;
   margin: 0 auto;
   padding: 6rem 1.6rem;
+  max-width: 960px;
+  margin: 0 auto;
 
   @media (max-width: 37.5em) {
     text-align: justify;

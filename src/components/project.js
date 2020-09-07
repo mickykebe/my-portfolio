@@ -8,8 +8,6 @@ const Root = styled.div`
   padding: 0 3.2rem;
   align-items: center;
   min-height: 300px;
-  margin-bottom: 3.2rem;
-  background-color: #f8fafc;
   @media (max-width: 37.5em) {
     flex-direction: column;
     align-items: flex-start;
@@ -71,7 +69,11 @@ export default function Project({
         <Paragraph>{description}</Paragraph>
       </DescriptionColumn>
       <ImageColumn>
-        <Image fluid={imageData} alt={title} />
+        <Image
+          fluid={imageData}
+          alt={title}
+          style={{ maxHeight: "350px", objectFit: "contain" }}
+        />
       </ImageColumn>
     </Root>
   )
