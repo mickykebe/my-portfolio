@@ -72,13 +72,13 @@ const NavLink = styled.a`
 
 export default function Heading() {
   const [windowScrolled, setWindowScrolled] = React.useState(false)
-  const handleWindowScroll = () => {
-    setWindowScrolled(window.scrollY > 0)
-  }
   React.useEffect(() => {
+    const handleWindowScroll = () => {
+      setWindowScrolled(window.scrollY > 0)
+    }
     window.addEventListener("scroll", handleWindowScroll)
     return () => window.removeEventListener("scroll", handleWindowScroll)
-  }, [handleWindowScroll])
+  }, [])
 
   return (
     <Header windowScrolled={windowScrolled}>

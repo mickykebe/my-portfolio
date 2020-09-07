@@ -2,7 +2,6 @@ import React from "react"
 
 import styled from "styled-components"
 import Image from "gatsby-image"
-import Link from "./link"
 
 const Root = styled.section`
   max-width: 800px;
@@ -72,29 +71,7 @@ export default function Hero({ imageData }) {
           stack engineer and mobile app engineer working with Javascript, React,
           Node and Flutter.
         </Paragraph>
-        <Paragraph>
-          I'm the founder and lead engineer of
-          <Link
-            to="https://hulusira.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            HuluSira.
-          </Link>{" "}
-          Currently trying to make jobs in Ethiopia more accessible to job
-          seekers.
-        </Paragraph>
-        <Paragraph>
-          In my spare time I work on{" "}
-          <Link
-            to="https://play.google.com/store/apps/details?id=com.fentale.zena"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Zena app
-          </Link>
-          , which is an Ethiopian news aggregator app I built.
-        </Paragraph>
+        <Paragraph>Here are a few of my projects:</Paragraph>
       </HeroDescription>
     </Root>
   )
