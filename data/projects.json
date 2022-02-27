@@ -3,7 +3,7 @@
     "title": "HackerNews Frontend",
     "url": "https://hackernews-kappa.vercel.app/",
     "image": "./images/hackernews.jpg",
-    "duration": "June 2020 - Current",
+    "duration": "June 2020 - July 2020",
     "description": "Built a HackerNews clone with a cleaner UX",
     "tag": ["React", "Typescript"]
   },
@@ -11,7 +11,7 @@
     "title": "BetAfalagi",
     "url": "https://t.me/betafalagi",
     "image": "./images/betafalagi.png",
-    "duration": "February 2020 - Current",
+    "duration": "February 2020 - March 2020",
     "description": "Founder and full stack engineer working on BetAfalagi telegram bot. BetAfalagi bot aims to make it easier to connect people on the lookout for houses with house owners who want to sell/rent their homes.",
     "tag": ["Typescript", "Node.js", "XState.js", "React"]
   },
@@ -19,7 +19,7 @@
     "title": "HuluSira",
     "url": "https://hulusira.com",
     "image": "./images/hulusira.png",
-    "duration": "October 2019 - Current",
+    "duration": "October 2019 - May 2020",
     "description": "I'm currently founder and full stack developer on hulusira.com. HuluSira is a job board platform for job seekers based in Ethiopia.",
     "tag": ["Javascript", "React", "Node.js", "Next.js", "Express.js"]
   },
