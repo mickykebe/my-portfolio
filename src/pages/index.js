@@ -24,7 +24,7 @@ const ProjectsSection = styled.section`
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "images/me.jpg" }) {
+      file(relativePath: { eq: "images/my-photo.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
