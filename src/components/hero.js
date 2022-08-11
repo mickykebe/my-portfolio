@@ -61,8 +61,7 @@ export default function Hero({ imageData }) {
       <HeroHeader>
         <MyPhoto fluid={imageData} />
         <HeroHeaderText>
-          Hi, I'm Michael. I'm a mobile and web app engineer in Addis Ababa,
-          Ethiopia.
+          Hi, I'm Michael. I'm a mobile and web app engineer in Houston, TX.
         </HeroHeaderText>
       </HeroHeader>
       <HeroDescription>
